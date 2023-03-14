@@ -130,7 +130,7 @@ void excluirElemento()
 		cout << "A lista esta vazia, nao tendo como excluir nada!" << endl;
 	}
 	else if (pos != -1) {
-		for (int i = valor - 1 ; i < nElementos; i++) {
+		for (int i = pos ; i < nElementos; i++) {
 			lista[i] = lista[i + 1];
 		}
 		nElementos--;
